@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  #border{
+    width: 350px;
+    height: 460px;
+    text-align: center;
+    border-top: 15px solid rgb(255, 255, 255, 0.3);
+    border-left: 15px solid rgb(255, 255, 255, 0.3);
+    border-bottom: 15px solid rgb(255, 255, 255, 0.3);
+    border-right: 15px solid rgb(255, 255, 255, 0.3);
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+  }
+</style>
+<body>
+  <div class="app-wrap">
+    <section>
+      <h2>Search for your (country/city)...</h2>
+    </section>
+       <header>
+      <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+       </header>
+    <main>
+      <div id="border">
+      <section class="location">
+        <div class="city">Delhi, India</div>
+        <div class="date">monday 27 november 2023</div>
+      </section>
+      <div class="current">
+        <div class="temp">17<span>°c</span></div>
+        <div class="weather">Thunderstorm</div>
+        <div class="hi-low">17°c / 17°c</div>
+      </div>
+      </div>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
